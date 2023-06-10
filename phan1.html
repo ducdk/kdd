@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="root">
+        <div id="load" class="loading min-h-[100vh] min-w-[100vw] flex items-center justify-center flex-col gap-6">
+            <img class="w-[250px]" src="./image/modau/01-loading.png" alt="">
+            <div class="flex h1 items-center justify-center">
+                <div id="loading" class="text-xl font-bold">LOADING</div>
+                <div id="starting" class="text-xl font-bold cursor-pointer" onclick="start()">BẮT ĐẦU</div>
+            </div>
+        </div>
+
+        <div id="root-content" class="phan">
+            <div class="container-wrap min-h-[auto] section-pad modau-300 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6">
+                        <div class="text-title">PHẦN I: “EM TỪNG BỊ ‘ĐẬP’” </div>
+                        <div class="text-start">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 ">Bạn đó nói xấu em và các bạn cùng lớp của bạn có kể lại cho em. </div>
+                        <div class="text-base-1 ">Sau đó, em đã xuống trường bạn đó để “đập” </div>
+                        <div class="audio1 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio1"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[300px]">
+                        <img src="./image/phan1/anhA.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6 justify-center" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="text-base-1 ">Nếu không gặp mặt, khó có thể tin rằng nữ sinh lớp 7 này đã từng tham
+                            gia đánh bạn. </div>
+                        <div class="text-base-1 ">A có vẻ bề ngoài xinh xắn, hiền dịu, ánh mắt trong veo… </div>
+                    </div>
+                    <div class="max-w-[300px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/04.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6 max-w-[300px]">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">“Em từng đánh một bạn nữ học trường khác. Khi bạn bị đánh,
+                            lột áo, em đã quay lại và đăng lên mạng xã hội”, A nói. </div>
+
+                        <div class="audio2 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio2"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[600px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/05.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-34 flex items-center relative">
+                <div class="scroll-ngang relative">
+                    <div class="absolute w-[100px] bottom-[150px] left-[80px]">
+                        <img src="./image/phan1/phai.png" class="muitenngang" alt="" srcset="">
+                        <div class="font-bold">Scroll ngang</div>
+                    </div>
+                    <div class="min-w-[100vw] flex items-center justify-center">
+                        <div class="container-w2 flex flex-col gap-4 items-center">
+                            <div class="max-w-[100%]">
+                                <img src="./image/phan1/06.jpg" alt="" srcset="">
+                            </div>
+                            <!-- <div class="max-w-[100%]" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <div class="text-base-1 ">Tất cả những gì A biết chỉ là những lời đồn thổi và kích bác về một nữ sinh đang nói xấu mình. </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="min-w-[100vw] flex items-center justify-center">
+                        <div class="container-w2 flex flex-col gap-4 items-center">
+                            <div class="max-w-[100%]">
+                                <img src="./image/phan1/07.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-w-[100vw] flex items-center justify-center">
+                        <div class="container-w2 flex flex-col gap-4 items-center">
+                            <div class="max-w-[100%]">
+                                <img src="./image/phan1/08.jpg" alt="" srcset="">
+                            </div>
+                            <!-- <div class="max-w-[100%]" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <div class="text-base-1 ">Ban đầu, A không rõ thực hư và cũng không hề có ý định đánh bạn. </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 max-w-[700px]">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 text-center" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">“Lúc đó em không có cảm giác gì hết. Nhưng sau đó, chị N rủ
+                            em xuống đó chơi và gặp bạn đó thì chị N nhảy vô đập và em đập theo” </div>
+                        <div class="audio3 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio3"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6">
+                        <div class="text-base-2 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">Thầy Hồ Tuấn Anh, Hiệu trưởng trường THCS Quỳnh Phương (Quỳnh
+                            Mai, Nghệ An), nơi A và N theo học cho biết, đây là “vụ việc động trời” của nhà trường và
+                            của cả địa phương. </div>
+                        <div class="text-base-2 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">TVụ việc bất ngờ xảy ra vào ngày Chủ nhật sau kỳ nghỉ Tết
+                            nguyên đán, nhưng ngay lập tức nhà trường đã nắm bắt thông tin và làm rõ sự việc với A, N
+                            cùng gia đình các em.</div>
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">Bạn đó nói xấu em và các bạn cùng lớp của bạn có kể lại cho
+                            em. </div>
+                        <div class="text-base-1 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">Sau đó, em đã xuống trường bạn đó để “đập” </div>
+
+                        <div class="audio4 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio4"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[300px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/thayTA.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6 max-w-[300px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="text-base-2 ">Nhưng ít người biết rằng, kẻ đi bắt nạt cũng từng bị bắt nạt. </div>
+                        <div class="text-base-2 ">Những giây phút hả hê nhanh chóng qua đi. Xem lại đoạn video do chính
+                            mình quay lại, A cảm thấy hối hận và thấy lại hình ảnh của chính mình bị bắt nạt trước đây.
+                        </div>
+                        <div class="text-base-2 ">A cũng đã từng bị các bạn cùng llớp đánh, quay video và up lên mạng xã
+                            hội. Đoạn video đã khơi dậy “ký ức đen”, những tổn thương A từng hứng chịu. </div>
+                    </div>
+                    <div class="max-w-[500px]" >
+                        <!-- <img src="./image/phan1/09.svg" alt="" srcset=""> -->
+                        <div class="09svg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-between">
+                    <div class="flex flex-col gap-6 max-w-[300px]">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 " data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">Năm học lớp 6, các bạn có xúm vào trêu em và đã “đập” em một
+                            lần. Sau đó, các bạn vẫn tiếp tục xúm vào trêu, bắt nạt em khiến em không thể học” </div>
+                        <div class="audio5 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio5"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[600px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/10.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap pb-0 min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 " data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="text-base-1 ">Khi biết việc con bị bắt nạt, bố mẹ A đã lên làm việc với nhà trường,
+                            thậm chí xin chuyển trường cho con. </div>
+                        <div class="text-base-1 ">Nhưng thầy Tuấn Anh chính là người thuyết phục bố mẹ A cho em được ở
+                            lại. (Thầy nói gì, thuyết phục như thế nào, tại sao không nên chuyển trường) </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap pt-0 min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="flex justify-center flex-col gap-4">
+                    <div class="m-w-[100vw]" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/11.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 max-w-[700px]">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 text-center" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">Em bị nắm tóc đánh, đá rồi ngồi lên đầu. Các bạn cũng đe dọa
+                            nếu em nói ra sẽ “đập” em tiếp </div>
+                        <div class="audio6 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio6"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrap min-h-[auto] section-pad modau-35 flex items-center relative">
+
+                <div class="scroll-ngang relative">
+                    <div class="absolute w-[100px] bottom-[150px] left-[80px]">
+                        <img src="./image/phan1/phai.png" class="muitenngang" alt="" srcset="">
+                        <div class="font-bold">Scroll ngang</div>
+                    </div>
+                    <div class="min-w-[100vw] flex gap-4 items-end content-35">
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/12.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/13.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/14.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/15.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/16.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/17.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/18.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/19.jpg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 max-w-[700px]">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 text-center" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            Tôi đã nói chuyện và làm công tác tâm lý với những bạn đã bắt nạt con. Thầy cô sẽ làm cầu
+                            nối để mối quan hệ của các con tốt hơn,
+                            cũng như giúp con thoải mái, vui vẻ khi đến trường. Gia đình nên suy nghĩ về việc để con ở
+                            lại đây học tập, ngay gần nhà sẽ đỡ vất vả hơn rất nhiều.
+                        </div>
+                        <div class="audio7 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio7"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrap pt-0 min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="flex justify-center flex-col gap-4">
+                    <div class="m-w-[100vw] relative flex items-center justify-center" data-aos="fade-up"
+                        data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                        <div class="container-w2 absolute top-4 modau-36-text">
+                            <div class="text-base-1">
+                                Từ kẻ bị bắt nạt <span class="text-base-1 modau-36-20">A trở thành người đi bắt
+                                    nạt.</span>
+                            </div>
+                        </div>
+                        <img class="modau-36-1" src="./image/phan1/20.jpg" alt="" srcset="">
+                        <img class="modau-36-2" src="./image/phan1/21.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-37 flex items-center relative">
+                <div class="scroll-ngang relative">
+                    <div class="absolute w-[100px] bottom-[150px] left-[80px]">
+                        <img src="./image/phan1/phai.png" class="muitenngang" alt="" srcset="">
+                        <div class="font-bold">Scroll ngang</div>
+                    </div>
+                    <div class="container-w2 flex gap-4  items-center content-37">
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/22.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/23.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/24.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex flex-col gap-4 min-w-[400px]" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/25.jpg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 " data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="text-base-2 text-center">Thầy Tuấn Anh cho biết, A ở thời điểm này trầm tính hơn, có
+                            vẻ chín chắn hơn. A sẵn sàng chia sẻ và nhìn nhận lại sự việc mình đã gây ra.</div>
+                        <div class="text-base-2 text-center">“Khi làm việc với gia đình, tôi khuyên bố mẹ hãy về nói
+                            chuyện với con bằng tất cả tình yêu thương, chia sẻ như một người bạn, tránh việc đánh đập,
+                            sỉ nhục… vì làm như vậy sẽ gây thêm tổn thương. Bố mẹ cần coi đây như một sự cố đáng thương
+                            thay vì sự cố đáng trách. </div>
+                        <div class="text-base-2 text-center">Trong hội đồng kỷ luật của nhà trường, thầy cô giáo cũng
+                            cần lưu ý để quan tâm và dành nhiều yêu thương hơn”, thầy Tuấn Anh nói. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 ">
+                        <div class="text-start" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./image/phan1/nhay.jpg" alt="" srcset="">
+                            <div class="flex-1 h-[2px] bg-444"></div>
+                        </div>
+                        <div class="text-base-1 text-center" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine">
+                            Bố mẹ cần coi đây như một sự cố đáng thương thay vì sự cố đáng trách.
+                        </div>
+                        <div class="audio8 flex flex-col gap-4 items-center justify-center mt-4">
+                            <div id="audio8"></div>
+                            <div class="play w-[30px]">
+                                <img src="./image/modau/play.svg" alt="" srcset="">
+                            </div>
+                            <div class="pause w-[30px] hidden">
+                                <img src="./image/modau/pause.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="container-w2 flex gap-4 justify-center">
+                    <div class="flex flex-col gap-6 " data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <div class="text-base-1">Từ kẻ bị bắt nạt. A trở thành người đi bắt nạt. Với A, em có sự quan
+                            tâm của bố mẹ, sự động viên của thầy cô. Đây là điểm tựa để A phấn đấu tốt hơn, trưởng thành
+                            hơn sau những sai lầm của mình.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap pt-0 min-h-[auto] section-pad modau-3 flex items-center justify-center relative">
+                <div class="flex justify-center flex-col gap-4">
+                    <div class="m-w-[100vw]" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                        <img src="./image/phan1/26.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.4/wavesurfer.min.js" integrity="sha512-/OXj4FUgEscXKD5YhrFOjx2NWZ7gjGatMETWNd0z6CNyF/pPDUto2Fu3qE2qqh1kVn5or3jGogF01s1ioSts9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+    <script src="./js/audio1.js"></script>
+    <script src="./js/script1.js"></script>
+
+    <!-- <script type="text/javascript" src="./js/lib/jwplayer.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/lib/jwplayer.html5.js"></script> -->
+    <!-- <script type="text/javascript">jwplayer.key="ABCDEFGHIJKLMOPQ";</script> -->
+    <!-- <div id="myElement">Loading the player...</div>
+    <script type="text/javascript">
+        jwplayer("myElement").setup({
+            file: "./image/modau/kodondoc-clip-vn.mp4"
+        });
+    </script> -->
+</body>
+
+</html>

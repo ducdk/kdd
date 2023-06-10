@@ -1,20 +1,20 @@
 * {
-    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', sans-serif;
     color: #2682d1;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 6px;
     height: 90%;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
     opacity: 0.2;
     border-radius: 30px;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     height: 20px;
@@ -45,6 +45,11 @@ body::-webkit-scrollbar-thumb {
     width: 1000px;
 }
 
+.phan .section-pad {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
 .section-pad {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -70,12 +75,24 @@ body::-webkit-scrollbar-thumb {
     left: 0;
 }
 
+.modau-link {
+    text-decoration: none;
+}
+
 .modau-2 {
     min-height: 700px;
 }
 
 .modau-title {
     max-width: 650px;
+    font-size: 80px;
+}
+
+.modau-300 {
+    transition: 1s;
+    position: sticky;
+    top: 0px;
+    opacity: 1;
 }
 
 .modau-30 {
@@ -87,9 +104,20 @@ body::-webkit-scrollbar-thumb {
 
 .modau-31 {
     max-width: 375px;
-    height: 500px;
+    /* height: 400px; */
     font-size: 30px;
 }
+
+.modau-31:hover {
+    transition: 0.5s;
+    transform: scale(1.15) !important;
+}
+
+.modau-31:hover .modau-link {
+    text-decoration: underline;
+}
+
+.modau-31 .modau-link {}
 
 .text-title {
     font-size: 35px;
@@ -97,16 +125,103 @@ body::-webkit-scrollbar-thumb {
     font-weight: 600;
 }
 
+.text-start {
+    display: flex;
+    align-items: center;
+}
+
+.text-start img {
+    width: 75px;
+}
+
 .bg-444 {
-    background-color: #4444444a;
+    background-color: #2682d1;
 }
 
 .text-base-1 {
     color: #444444cf;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .text-base-2 {
     color: #444444cf;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.modau-34, .modau-35, .modau-37 {
+    max-width: 100vw;
+    overflow-x: scroll;
+    padding: 0!important;
+}
+
+.scroll-ngang {
+    width: 300vw;
+    display: flex;
+}
+
+.modau-35 .content-35 {
+    margin-left: 250px;
+}
+
+.modau-36-text {
+    z-index: 10;
+}
+
+.modau-36-1 {
+    transition: 1s;
+    opacity: 1;
+}
+
+.modau-36-2 {
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+}
+.modau-36-20 {
+    transition: 1s;
+    opacity: 0;
+}
+
+
+.modau-35 .content-35 {
+    margin-left: 250px;
+}
+.modau-37 .content-37 {
+    margin-left: 250px;
+}
+
+#audio1,
+#audio2,
+#audio3,
+#audio4,
+#audio5,
+#audio6,
+#audio7,
+#audio8 {
+    width: 200px;
+
+}
+
+
+/* //animation */
+
+@keyframes MoveUpDownNgang {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+.muitenngang {
+    animation: MoveUpDownNgang 1s linear infinite;
+}
+
+
+#Layer_1 {
+    width: 500px;
 }

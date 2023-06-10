@@ -1,10 +1,12 @@
 AOS.init();
 
-function playVideoBG(play = true) {
+function playVideoBG(play = true, on = false) {
     const modau_video1 = document.getElementById('modau_video1');
     if (modau_video1) {
         if (play) {
-            modau_video1.play();
+            if (on) {
+                modau_video1.play();
+            }
         } else {
             modau_video1.pause();
         }
@@ -15,7 +17,7 @@ function start() {
     $('#load').hide();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // $('#root-content').show();
-    playVideoBG(true);
+    playVideoBG(true, true);
 }
 
 $(window).on('load', function () {
