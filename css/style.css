@@ -1,0 +1,112 @@
+* {
+    font-family: 'Pangolin', cursive;
+    color: #2682d1;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 90%;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+
+.container-wrap {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: white;
+}
+
+.container-w {
+    width: 1000px;
+}
+.container-w2 {
+    width: 1000px;
+}
+
+.section-pad {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.modau-1 {
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    opacity: 1;
+}
+
+.modau-start {
+    margin-top: 100vh;
+}
+
+#modau_video1 {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modau-2 {
+    min-height: 700px;
+}
+
+.modau-title {
+    max-width: 650px;
+}
+
+.modau-30 {
+    transition: 1s;
+    position: sticky;
+    top: -100px;
+    opacity: 1;
+}
+
+.modau-31 {
+    max-width: 375px;
+    height: 500px;
+    font-size: 30px;
+}
+
+.text-title {
+    font-size: 35px;
+    color: #444;
+    font-weight: 600;
+}
+
+.bg-444 {
+    background-color: #4444444a;
+}
+
+.text-base-1 {
+    color: #444444cf;
+    font-size: 23px;
+}
+
+.text-base-2 {
+    color: #444444cf;
+    font-size: 18px;
+}
